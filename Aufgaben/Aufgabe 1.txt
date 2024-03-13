@@ -1,0 +1,12 @@
+#Aufgabe1: WetterPrüfung
+ 
+# //Der User soll Ihnen mitteilen, ob das Wetter gerade "sonnig" oder "regnerisch" ist.
+# //Auch die Temperatur soll der User angeben können.
+# //Liegt die Temperatur bei oder über 20°C und es ist sonnig, 
+# //empfehlen sie dem User ein T-Shirt zu tragen.
+# //Liegt die Temperatur unter 20°C und es ist sonnig, empfehlen Sie eine Jacke anzuziehen.
+# //Bei regnerischen Wetter müssen ebenfalls die Kleiderempfehlung 
+# //ausgesprochen werden die sich nach der jeweiligen Temperatur richten.
+# //Zusätzlich soll der User drauf hingewiesen werden, 
+# //dass ein Regenschirm mitgenommen werden soll
+ 

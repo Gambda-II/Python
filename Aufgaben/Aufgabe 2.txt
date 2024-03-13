@@ -1,0 +1,14 @@
+#Aufgabe2: PromilleRechner
+ 
+# //Getrunkene Menge in Milliliter * Alkoholgehalt * Dichte des Ethanols.
+# //Bei Bier also: Getrunkene Menge in Milliliter * 0.05 * 0.8
+# //Der User soll auch sein Gewicht in Kilogramm angeben.
+# //Dann wird der Blutalkoholgehalt in Promille berechnet.
+# //c = A / (0.65*G)
+# //c ist der Promillewert, A der aufgenommene Alkohol in Gramm und G das Körpergewicht in kg.
+# //Es soll dann eine Ausgabe, abhängig vom Promillewert folgen:
+# //bis 0.3: "Noch akzeptabel. Dennoch vorsichtig sein!"
+# //bis 0.5: "Achtung! Hände weg vom Steuer!"
+# //bis 0.8: "Das ist jetzt schon ganz schön ordentlich."
+# //ab 0.8: "Kein Kommentar..."
+# //Wählen Sie passende Datentypen für die jeweils notwendigen Variablen.
