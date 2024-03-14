@@ -1,0 +1,7 @@
+#Aufgabe 5
+ 
+# //Programmieren Sie ein Schere, Stein, Papier Spiel.
+# //Der User soll eines der Handzeichen wählen können.
+# //Der Computer wählt per Zufall ein eigenes Zeichen.
+# //Dem User wird dann ausgegeben, welches Zeichen der Computer gewählt hat und ob man gewonnen, verloren oder ein Unentschieden hat.
+# //Danach kann sich der User entscheiden eine weitere Runde zu spielen, oder nicht.
