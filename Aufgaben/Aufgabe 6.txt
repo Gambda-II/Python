@@ -1,0 +1,27 @@
+#Aufgabe 6
+ 
+# //Erstellen Sie ein int Array mit den Werten 4, 33, 7, 1, 23, 12 in genau dieser Reihenfolge.
+# //Schreiben Sie dann einen Bubblesort um die Zahlen aufsteigend, von der kleinsten bis zur größten Zahl, zu sortieren.
+# //Lassen Sie sich zur Kontrolle dann das sortierte Array ausgeben.
+#Listen dürfen auch verwendet werden
+
+4, 33, 7, 1, 23, 12     START
+4, 33, 7, 1, 23, 12     Iteration   1
+4, 7, 33, 1, 23, 12                 2
+4, 7, 1, 33, 23, 12                 3
+4, 7, 1, 23, 33, 12                 4
+4, 7, 1, 23, 12, 33                 5
+
+4, 7, 1, 23, 12, 33     Iteration   6
+4, 1, 7, 23, 12, 33                 7
+4, 1, 7, 23, 12, 33                 8
+4, 1, 7, 12, 23, 33                 9
+
+1, 4, 7, 12, 23, 33     Iteration   10
+1, 4, 7, 12, 23, 33                 11
+1, 4, 7, 12, 23, 33                 12
+
+1, 4, 7, 12, 23, 33     Iteration   13
+1, 4, 7, 12, 23, 33                 14
+
+1, 4, 7, 12, 23, 33     Iteration   15
