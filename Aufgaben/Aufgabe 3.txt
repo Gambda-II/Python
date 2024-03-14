@@ -1,0 +1,7 @@
+#Aufgabe 3
+ 
+# //Erstellen Sie einen einfachen Taschenrechner.
+# //Der User soll nacheinander zwei Zahlen und auch  
+# //ein Zeichen für die Rechenart eingeben können (+ - * / ) können.
+# //Anschließend wird die Berechnung durchgeführt und das Ergebnis ausgegeben.
+# //Nach Ausgabe des Ergebnis fragen Sie den User ob er eine weitere Berechnung durchführen möchte oder ob er das Programm verlassen will.
