@@ -60,3 +60,55 @@ bubbleSort(unsortedList)
 
 
 
+# Merge Sort does not work here
+
+def merge(left, right):
+    emptyList = []
+
+    leftLength = len(left) - 1
+    rightLength = len(right) - 1
+
+    leftIndex = 0
+
+    for i in range(0, leftLength + rightLength + 1):
+        if (leftIndex > rightLength):
+            emptyList.append(right[i-leftIndex])
+        if leftIndex < i-rightLength:
+            leftIndex += 1
+        if left[leftIndex] <= right[i-leftIndex]:
+            emptyList.append(left[leftIndex])
+        else:
+            emptyList.append(right[i-leftIndex])
+
+    return emptyList
+
+def mergeSort(listToSort):
+
+    length = len(listToSort)
+
+    if (length <= 1):
+        return listToSort
+    
+    leftList = []
+    rightList = []
+
+    midpoint = math.floor((length - 1) / 2)
+
+    for i in range(0,midpoint + 1):
+        value = listToSort[i]
+        leftList.append(value)
+
+
+    for i in range(midpoint + 1, length):
+        value = listToSort[i]
+        rightList.append(value)
+    
+    leftList = mergeSort(leftList)
+    rightList = mergeSort(rightList)
+
+
+    return merge(leftList, rightList)
+
+    
+print("Merge")
+print(mergeSort(unsortedList))
