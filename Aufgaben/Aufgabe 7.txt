@@ -3,10 +3,12 @@
     # //Aufgabe1:
     # //Erstellen Sie die Klasse Kaffeemaschine.
     # //Diese soll über die Felder "wasserstand" und "bohnenMenge" verfügen.
-    # //Es soll auch zwei static Felder (bemühen Sie Ihren Lutterman und/oder googeln Sie bitte was static bedeutet und
+    # //Es soll auch zwei static Felder (bemühen Sie Ihren Lutterman und/oder 
+    # //googeln Sie bitte was static bedeutet und
     # //wie es eingesetzt wird) geben namens "maxWasserstand" und "maxBohnenmenge".
     # //Die Klasse soll im Sinne der Datensicherheit gekapselt sein.
-    # //Erstellen Sie zwei Methoden, welche jeweils zurückmelden wieviel Wasser und wieviele Bohnen aufgefüllt werden müssen.
+    # //Erstellen Sie zwei Methoden, welche jeweils zurückmelden wieviel Wasser 
+    # //und wieviele Bohnen aufgefüllt werden müssen.
     # //Hinweis: Sie werden dann selbst ein Objekt der Klasse Kaffeemaschine erstellen müssen, dem Sie beliebig entsprechende Werte
     # //zuweisen und mit dem Sie dann die Methoden ausführen können.
     # //
