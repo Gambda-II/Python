@@ -7,7 +7,7 @@ def BerechnePromilleWert(Alkoholmenge, Koerpergwicht):
     except ZeroDivisionError:
         print("Körpergewicht kann nicht Null sein.")
 
-minGewicht = 50
+minGewicht = 40
 maxGewicht = 600
 
 def GewichtAbfrage():
