@@ -1,0 +1,21 @@
+#Aufgabe 8
+       
+# Erstelle eine Python-Klasse namens Bankkonto, die folgende Funktionalitäten hat:
+ 
+# Initialisierung: 
+# Beim Erstellen eines neuen Bankkonto-Objekts sollte es möglich sein,
+# den Namen des Kontoinhabers und eine optionale initiale Einzahlung anzugeben.
+# Jedes Konto hat auch eine eindeutige Kontonummer, die automatisch generiert wird.
+# Einzahlung: Implementiere eine Methode einzahlen, die einen Betrag entgegennimmt
+# und diesen dem Kontostand hinzufügt.
+# Abhebung: Implementiere eine Methode abheben, 
+# die überprüft, ob genügend Geld auf dem
+# Konto vorhanden ist, bevor der angeforderte Betrag abgehoben wird. 
+# Falls nicht genügend Geld vorhanden ist,
+# sollte eine Warnmeldung ausgegeben werden.
+# Kontostand anzeigen: Implementiere eine Methode zeige_kontostand,
+# die den aktuellen Kontostand auf der Konsole ausgibt.
+# Kontoinformation anzeigen: Implementiere eine Methode zeige_kontoinformation,
+# die den Namen des Kontoinhabers, die Kontonummer und den aktuellen Kontostand ausgibt.
+# DIe entsprenden Daten des Objekts sollen in einer SQL Datenbank gespeichert werden
+# und bei bedarf abgerufen werden
