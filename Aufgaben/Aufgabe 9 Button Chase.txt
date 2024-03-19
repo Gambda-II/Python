@@ -1,0 +1,14 @@
+#WIR PROGRAMIEREN EIN SPIEL!!
+#Button Chase
+
+#programiere ein Spiel mit einem Fenster das 600*600px groß ist
+#In dem Spiel gibt es einen Button 
+#Der button ändert alle paar sekunden die postition (geschwindigkeit ist euch überlassen)
+#Zudem gibt es ein Label das die Punktezahl des Spielers anzeigt
+#Wenn der Spieler den Button anklickt bekommt er einen Punkt
+#Wenn er daneben klickt verliert er einen Punkt
+#Suche selbständig nach einer möglickeit einen Klick vom Button von einem Klick auf das Fenster zu unterscheiden
+#Informiere dich über die Methode .after von Tk()
+
+#Optional: Der button und der Hintergrund sollen die farbe nach jedem positionswechsel ändern.
+#hintergrund und button dürfen nicht die gleiche farbe haben.
