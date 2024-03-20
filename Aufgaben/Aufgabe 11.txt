@@ -1,0 +1,4 @@
+#Aufgabe GUI Taschenrechner
+#Programiere einen einfachen taschenrechener mit GUI
+#Der Taschenrechner soll + - * / können
+#Über ein Menu soll man das Theme des Taschenrechners änder können(also: die Farben)
