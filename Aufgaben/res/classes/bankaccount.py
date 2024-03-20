@@ -25,10 +25,14 @@ def create_account_in_database(firstName, lastName, initialDeposit):
     try:
         cursor.execute(query, params)
         connection.commit()
-        print("Account creation in DB - SUCCESS")
+        message = "Account creation in DB - SUCCESS"
+        print(message)
+        return message
 
     except Exception as e:
-        print(f"Account creation in DB - FAILED {e}")
+        message = f"Account creation in DB - FAILED {e}"
+        print(message)
+        return message
 
     finally:
         connection.close()
@@ -118,14 +122,18 @@ class BankAccount:
 
         self.__firstName = firstName
         self.__lastName = lastName
+        self.__currentBalance = 0
 
-        if (initialDesposit > 0):
-            self.__currentBalance = 0 + initialDesposit
-        else:
-            self.__currentBalance = 0
+        try:
+            if (initialDesposit > 0):
+                self.__currentBalance = 0 + initialDesposit
+        except:
+            if isinstance(initialDesposit,float):
+                initialDesposit = float(initialDesposit)
+                self.__currentBalance += initialDesposit
 
         if (self.checkID(id) == False):
-            create_account_in_database(firstName,lastName,self.__currentBalance)
+            message = create_account_in_database(firstName,lastName,self.__currentBalance)
             id_db = fetch_id_from_database()
             self.__id = id_db
         else:
@@ -136,19 +144,21 @@ class BankAccount:
         try:
             if (amount == 0):
                 print("Transaction 'Deposit' ignored - deposit was zero")
-                return
+                return "Transaction 'Deposit' ignored - deposit was zero"
 
             if (amount < 0):
                 print("Error: Transaction 'Deposit' failed - deposit was negative")
-                return
+                return "Error: Transaction 'Deposit' failed - deposit was negative"
             self.__currentBalance += amount
             #print(self.__currentBalance)
             update_balance_in_database(self.__id,amount)
-            print(fetch_balance_from_database(self.__id))
+            #print(fetch_balance_from_database(self.__id))
             print("Transaction 'Deposit' successfully completed!")
+            return "Transaction 'Deposit' successfully completed!"
 
         except Exception as e: 
             print(f"Error: Transaction 'Deposit' failed -  {e}")
+            return f"Error: Transaction 'Deposit' failed -  {e}"
 
 
     def withdraw(self, amount):
@@ -223,5 +233,7 @@ class BankAccount:
                 return bankaccount
             else:
                 print("ID was not found")
+                return None
         except Exception as e:
             print(f"An Error occured - {e}")
+            return None
