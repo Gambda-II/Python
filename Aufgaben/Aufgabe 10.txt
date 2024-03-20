@@ -1,0 +1,10 @@
+#GUI für Banksystem
+#Nutze dein Banksystem oder eine Kopie davon von der 
+#vorherigen Aufgabe Banksystem
+#Erstelle für dieses Programm eine GUI die es ermöglich 
+#einen neuen Eintrag 
+#zu machen sowie auszuwälen zwischen den
+#verschieden Funktion von diesem Programm
+ 
+#Anmerkung: Achte darauf das es nicht möglich eine Injection 
+#zu machen nutze dafür %s
